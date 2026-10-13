@@ -22,7 +22,7 @@ public class Principal {
         //Paso 5
         FicheroInventario fichero = new FicheroInventario("datos/inventario.dat");
         try{
-            int cargados = fichero.crearDesdeCsv("datos/inventario.dat");
+            int cargados = fichero.crearDesdeCsv("datos/zapatillas.csv");
             System.out.println("Registros cargados desde el CSV: " + cargados);
             System.out.println("Tamaño de inventario.dat: " + Files.size(Path.of("datos/inventario.dat")) + " bytes");
         } catch (IOException e) {
